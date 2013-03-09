@@ -5,56 +5,98 @@
 <title>SF NiteLife | Home</title>
 <link href="main.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="scripts/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/nivo-slider.css" type="text/css" media="screen" />
+    
 
 </head>
 
 <body>
-		<div id="back_header"></div>
+
+
+		<div id="back_header">
         <!--   container div starts   -->
-<div id="container">
-		<header>
+
+			<header>
                 	<div id="logo">
                 		<img src="imgs/logo.png" width="238" height="47">
-                        </logo>
-                </header>
-                
-<!--	<!--   slider div (absolute)   -->
-    <div id="left_slider_wrap"><img src="imgs/left_slider_wrap.png" width="20" height="18"></div>
-    <div id="right_slider_wrap"><img src="imgs/right_slider_wrap.png" width="20" height="18"></div>
-                <div id="slider">
-                </div>-->
-        <!--   twitter header (absolute)   -->
-    <div id="left_twitter_wrap"><img src="imgs/left_twitter_wrap.png" width="20" height="18"></div>
-                <div id="tweet_head"><img src="imgs/twitter_banner.png" width="221" height="43" alt="twitter banner"></div>
-                <div id="tweet_txt">Upcoming Events </div>
-        	<!--   sub_container starts   -->
-        	<div id="sub_container">
-                    <nav>
+                        </div>
+            </header>
+        </div>        
+<div id="container">    
+            <nav>
                         <ul>
                         	<li id="home" class="nav_style">home</li>
                                 <li id="food" class="nav_style">food</li>
                                 <li id="drinks" class="nav_style">drinks</li>
                                 <li id="dance" class="nav_style">dance</li>
-                                <li id="contact" class="nav_style">contact</li><!--
+                                <li id="contact" class="nav_style">contact</li>
+                        </ul>  
+                 </nav>             
+<!--	<!--   slider div (absolute)   --><div id="sub_container">
+    <div id="wrapper">
+        
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/concert.jpg" data-thumb="images/concert.jpg" alt=""  />
+                <a href="http://dev7studios.com"><img src="images/cake.jpg" data-thumb="images/cake.jpg" alt="" title="Delicious cakes and pasteries at Bonjour Cakes and Bistro" /></a>
+                <img src="images/lights.jpg" data-thumb="images/lights.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/sandwich.jpg" data-thumb="images/sandwich.jpg" alt="" title="So many different sandwiches and Johnny Boy's Deli" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                which spot does this caption come out at
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+        
+        
+        
+        
+        <!--   twitter header (absolute)   -->
+    <div id="left_twitter_wrap"><img src="imgs/left_twitter_wrap.png" width="20" height="18"></div>
+                <div id="tweet_head"><img src="imgs/twitter_banner.png" width="221" height="43" alt="twitter banner"></div>
+                <div id="tweet_txt">Upcoming Events </div>
+        	<!--   sub_container starts   -->
+        	
+                    <!--
                                 <li id="map" class="nav_style">map</li>-->
-                        </ul>
-                        </nav>            
+                                   
                         <div id="sub_header"><h2>San Francisco's #1 guide for where to eat, drink &amp; dance!</h2></div>
                         <!--   content div starts   -->
                     <div id="content">
-                                <div id="tweet_box"></div>
+                                <div id="tweet_box">
+                                
+                                <a class="twitter-timeline" href="https://twitter.com/sanfranitelife" data-widget-id="309440534164930560">Tweets by @sanfranitelife</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                                
+                                
+                                </div>
                                 <div id="map_box">
                                 	<div id="map"><img src="imgs/temp_map.png" width="287" height="277" alt="sf map"></div>
                         </div>
-                    </div>
+                    </div> </div>
                         <!--   content div ends   -->
-                        <div id="sub_footer"></div>
+</div>                        <div id="sub_footer"></div>
                         <footer></footer>
-    </div>
+   
                 <!-- ^^^   sub_container closes   ^^^ -->
-</div>
-<p>&nbsp;</p>
+
+
 	<!-- ^^^  container div closes  ^^^ -->
+    
+    
 </body>
 </html>
