@@ -9,24 +9,21 @@
  
 /* The Nivo Slider styles */
 .nivoSlider {
-	width: 690px;
+	width: 700px;
 	height: 300px;
-	position: absolute;
 	overflow: hidden;
-	left: -20px;
 	
 }
 .nivoSlider img {
-	width: 690px;
+	width: 700px;
 	height: 300px;
 	left:0px;
 	max-width: none;
 }
 .nivo-main-image {
-	display: block !important;
-	position: relative !important; 
-	width: 690px !important;
-	height: 300px !important;
+	display: block;
+	width: 690px;
+	height: 300px;
 }
 
 /* If an image is wrapped in a link */
@@ -34,7 +31,7 @@
 	position:absolute;
 	top:0px;
 	left:0px;
-	width: 690px;
+	width: 700px;
 	height: 300px;
 	border:0;
 	padding:0;

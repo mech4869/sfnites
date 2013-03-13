@@ -4,27 +4,28 @@
 <meta charset="UTF-8">
 <title>SF NiteLife | Home</title>
 <link href="main.css" rel="stylesheet" type="text/css">
-<link href="nivo-slider/nivo-slider.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="scripts/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="scripts/nivo-slider.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="scripts/menu.js"></script>
 
-<style>
-    /* Prevents slides from flashing */
-    #slides {
-      display:none;
+  
+  <!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
     }
   </style>
-
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="jquery.slides.min.js"></script>
-
-  <script>
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 528
-      });
-    });
-  </script>
-  
+<![endif]-->
   
 </head>
 
@@ -32,10 +33,50 @@
 	<!--     BACKGROUND HEADER     -->
         <div id="bk_header"></div>
 	<!--     CONTAINER DIV BEGINS     -->          
-        <div id="container">
+        
                         <header>
                         <div id="logo"><img src="imgs/logo.png" width="104" height="22" alt="logo"></div>
                 	<nav>
+                    
+                    <ul id="sddm">
+                    <li><a href="index.html">Home</a></li>
+    <li><a href="#" 
+        onmouseover="mopen('m1')" 
+        onmouseout="mclosetime()">Drinks</a>
+        <div id="m1" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">Bars</a>
+        <a href="#">Lounges</a>
+        <a href="#">Wine Tasting</a>
+        </div>
+    </li>
+    <li><a href="#" 
+        onmouseover="mopen('m2')" 
+        onmouseout="mclosetime()">Restraunts</a>
+        <div id="m2" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">Date Night</a>
+        <a href="#">Family Night</a>
+        <a href="#">Quick Bite</a>
+        </div>
+    </li>
+     <li><a href="#" 
+        onmouseover="mopen('m3')" 
+        onmouseout="mclosetime()">Music</a>
+        <div id="m3" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+        <a href="#">Live Bands</a>
+        <a href="#">Dance</a>
+        <a href="#">House</a>
+        </div>
+    </li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">maps</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
                         <!--<ul>
                         	<li>Home</li>
                                 <li>Food</li>
@@ -60,33 +101,78 @@
                                 <li>Contact</li>
                         </ul>-->
 			</nav>
-                </header>        
+                </header> 
+                
+                <div id="container">       
                 <!--      NAV ENDS^^^    -->
                 <!--      SLIDER BEGINS     -->
-                <div id="slider">
-                	<div id="slides">
-                                <img src="http://placehold.it/940x528">
-                                <img src="http://placehold.it/940x528">
-                                <img src="http://placehold.it/940x528">
-                                <img src="http://placehold.it/940x528">
-                                <img src="http://placehold.it/940x528">
-                        </div>
-                </div>
+    <div id="wrapper">
+        
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/concert.jpg" data-thumb="images/concert.jpg" alt=""  />
+                <a href="http://dev7studios.com"><img src="images/cake.jpg" data-thumb="images/cake.jpg" alt="" title="Delicious cakes and pasteries at Bonjour Cakes and Bistro" /></a>
+                <img src="images/lights.jpg" data-thumb="images/lights.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/sandwich.jpg" data-thumb="images/sandwich.jpg" alt="" title="So many different sandwiches and Johnny Boy's Deli" />
+            </div><!--slider end-->
+            <div id="htmlcaption" class="nivo-html-caption">
+                which spot does this caption come out at
+            </div><!--html capotion end-->
+        </div><!--slidder-wrapper end-->
+
+    </div><!--wrapper end-->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+        
+
                 
                 <!--    SLIDER ENDS    -->
                 
-                <div id="banner"></div>
+                <div id="banner">
+                
+                <h2>San Francisco's #1 guide for where to eat, drink &amp; dance!</h2>
+                
+                </div>
                 
                 <!--    CONTENT BEGINS     -->
+                
+                <!--three Column-->
+                
+                <article id="bar_col" class="three_col">
+                
+                </article>
+                
+                <article id="food_col" class="three_col">
+                
+                </article>
+                
+                <article id="music_col" class="three_col">
+                
+                </article>
+                
                 <div id="content">
                 	<!--left col-->
                         <section id="left_col">
                         	<article class="left">
+                            
+                            
+                            <a class="twitter-timeline" href="https://twitter.com/sanfranitelife" data-widget-id="309440534164930560">Tweets by @sanfranitelife</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
                                 </article>
                         </section>
                         <!--right col-->
                         <section id="right_col">
                         	<article class="right">
+                            
+                            <img id="right_map" src="imgs/temp_map.png"/>
                                 </article>
                         </section>
                 
@@ -94,5 +180,38 @@
                 <!--    CONTENT ENDS     -->
 	</div>
         <!--     CONTAINER DIV ENDS^^^    -->
+        <!--FOOTER STARTS-->
+        <div id="footer">
+        
+        <ul id="foot_nav">
+                        	<!--<li>Home</li>
+                                <li>Food</li>
+                                	<ul>
+                                             <li>Date Night</li>
+                                             <li>Family Night</li>
+                                             <li>Quick Bite</li>
+                                        </ul>
+                                <li>Drinks</li>
+                                	<ul>
+                                             <li>Lounge</li>
+                                             <li>Bars</li>
+                                             <li>Wine Bars</li>
+                                        </ul>
+                                <li>Music</li>
+                                	<ul>
+                                             <li>Dancing</li>
+                                             <li>Live Bands</li>
+                                             <li>House</li>
+                                        </ul>
+                                <li>Events</li>
+                                <li>Contact</li>
+                        </ul>-->
+
+</div>
+
+		<div id="copyright">
+        </div>
+
+
 </body>
 </html>
