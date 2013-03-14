@@ -75,30 +75,32 @@ nav {
 }
 
 #sddm li a:hover
-{	background: #49A3FF}
+{	background: #999}
 
 #sddm div
 {	position: absolute;
 	visibility: hidden;
 	margin: 0;
 	padding: 0;
-	border: 1px solid #5970B2}
+	width: 60px;
+	background: #CCC;
+	}
 
 	#sddm div a
 	{	position: relative;
 		display: block;
 		margin: 0;
 		padding: 5px 10px;
-		width: auto;
+		
 		white-space: nowrap;
 		text-align: left;
 		text-decoration: none;
-		background: #EAEBD8;
-		color: #2875DE;
+		background: #CCC;
+		color: #FFF;
 		font: 11px arial}
 
 	#sddm div a:hover
-	{	background: #49A3FF;
+	{	background: #999;
 		color: #FFF}
 
 #banner {
@@ -106,6 +108,7 @@ nav {
 	height: 80px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 17px;
 	background: url(imgs/paper_fibers.png) repeat;
 	border-bottom: 1px solid #ccc;
 	
@@ -156,7 +159,7 @@ nav {
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px#888;
 	box-shadow: 0 0 5px #888;
-	padding:10px;
+	padding: 17px 10px 17px 10px;
 }
 #right_map {
 	margin-left:12px;
@@ -181,7 +184,55 @@ margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 	background: #333;
 }
 
+#footer_nav{
+	width: 840px;
+	margin: 10px auto 0 auto;
+}
+
+.coloumn_two{
+	width: 110px;
+	height: 150px;
+	margin: 5px;
+	float: left;
+	color:#FFF;
+	font: 11px arial;
+}
+
+#footer_nav h4{
+	text-indent: 40px;
+	font-size:13px;
+	font-weight:bolder;
+}
+
+#footer_nav li{
+	list-style:none;
+	margin-bottom:20px;
+}
+
+#footer_nav h4 a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#footer_nav h4 a:hover{
+	background:#FFF;
+	color:#333;
+	text-decoration:none;
+}
+
+#footer_nav li a{
+	display:block;
+	color:#FFF;
+	font: 11px arial;
+	text-decoration:none;
+}
+
+#footer_nav li a:hover{
+	text-decoration:underline;
+}
+
 #copyright{
+	border-top: 1px solid #000;
 	position:relative;
 	height: 50px;
 	margin:0;
